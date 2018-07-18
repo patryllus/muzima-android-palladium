@@ -1,0 +1,49 @@
+<!--
+  ~ Copyright (c) 2014 - 2017. The Trustees of Indiana University, Moi University
+  ~ and Vanderbilt University Medical Center.
+  ~
+  ~ This version of the code is licensed under the MPL 2.0 Open Source license
+  ~ with additional health care disclaimer.
+  ~ If the user is an entity intending to commercialize any application that uses
+  ~  this code in a for-profit venture,please contact the copyright holder.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:custom="http://schemas.android.com/apk/res-auto">
+	<item
+		android:id="@+id/scan_shr_card"
+		android:icon="@drawable/ic_action_write_card"
+		custom:showAsAction="always"
+		android:title="@string/scan_card_id_title"/>
+
+	<item
+		android:id="@+id/menu_client_add_icon"
+		android:icon="@drawable/ic_action_add_client"
+		android:title="@string/hint_client_search"
+		custom:showAsAction="always" />
+
+	<item
+			android:id="@+id/bar_card_scan"
+			android:icon="@drawable/barcode_icon"
+			custom:showAsAction="always"
+			android:title="@string/title_client_scan"/>
+	<item
+			android:id="@+id/search"
+			custom:actionViewClass="android.support.v7.widget.SearchView"
+			android:icon="@drawable/ic_search"
+			android:visible="false"
+			custom:showAsAction="always"
+			android:title="@string/hint_client_search"/>
+	<item
+			android:id="@+id/menu_client_add_text"
+			custom:showAsAction="never"
+			android:title="@string/general_client_register"/>
+	<item
+			android:id="@+id/menu_complete_form_data"
+			custom:showAsAction="never"
+			android:title="@string/menu_form_data_sync"/>
+	<item
+			android:id="@+id/menu_dashboard"
+			custom:showAsAction="never"
+			android:title="@string/general_dashboard"/>
+</menu>

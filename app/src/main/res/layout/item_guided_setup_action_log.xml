@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014 - 2017. The Trustees of Indiana University, Moi University
+  ~ and Vanderbilt University Medical Center.
+  ~
+  ~ This version of the code is licensed under the MPL 2.0 Open Source license
+  ~ with additional health care disclaimer.
+  ~ If the user is an entity intending to commercialize any application that uses
+  ~  this code in a for-profit venture,please contact the copyright holder.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/primary_black">
+    <TextView
+            android:id="@+id/setup_action"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            style="@style/SetUpLogList"
+            android:layout_height="wrap_content"
+    />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/setup_action_result_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SetUpLogList"
+                android:textColor="@color/primary_blue"/>
+        <TextView
+                android:id="@+id/setup_action_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_blue"
+                style="@style/SetUpLogList"
+                android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+
+</LinearLayout>
